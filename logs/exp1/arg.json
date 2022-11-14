@@ -1,0 +1,28 @@
+{
+    "task": "congestion_gpdl",
+    "save_path": "./logs/exp1",
+    "pretrained": null,
+    "max_iters": 200000,
+    "save_as_npy": false,
+    "arg_file": null,
+    "dataroot": "./training_set/congestion",
+    "ann_file_train": "./files/train.csv",
+    "ann_file_test": "./files/test.csv",
+    "dataset_type": "CongestionDataset",
+    "batch_size": 16,
+    "aug_pipeline": [
+        "Flip"
+    ],
+    "model_type": "GPDL",
+    "in_channels": 3,
+    "out_channels": 1,
+    "lr": 0.0002,
+    "weight_decay": 0,
+    "loss_type": "MSELoss",
+    "eval_metric": [
+        "PSNR",
+        "SSIM",
+        "EMD",
+        "NRMS"
+    ]
+}

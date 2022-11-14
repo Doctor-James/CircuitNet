@@ -10,8 +10,10 @@ from datasets.build_dataset import build_dataset
 from losses import build_loss
 from models.build_model import build_model
 from utils.configs import Paraser
+from metrics import build_metric
 from math import cos, pi
 import sys, os, subprocess
+import wandb
 
 
 def checkpoint(model, epoch, save_path):
@@ -109,10 +111,13 @@ def train():
     # Initialize dataset
     dataset = build_dataset(arg_dict)
 
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print('===> Building model')
     # Initialize model parameters
     model = build_model(arg_dict)
-    model = model.cuda()
+    model = torch.nn.DataParallel(model)
+    model = model.to(device)
+    # model = model.cuda()
     
     # Build loss
     loss = build_loss(arg_dict)
@@ -124,15 +129,32 @@ def train():
     cosine_lr = CosineRestartLr(arg_dict['lr'], [arg_dict['max_iters']], [1], 1e-7)
     cosine_lr.set_init_lr(optimizer)
 
+    # wandb
+    os.environ["WANDB_API_KEY"] = '6c8a124fda2ff1f951266df70b7a216bb0d7f13d'
+    os.environ["WANDB_MODE"] = "dryrun"
+    wandb.init(project="congestion_gpdl", entity="doctor-james-zjl", dir=arg_dict['save_path'])
+    wandb.config = {
+        "batch_size": 16,
+        "max_iters": arg_dict['max_iters'],
+        "learning_rate": arg_dict['lr'],
+        "weight_decay": arg_dict['weight_decay'],
+    }
+
+    # metrics
+    metrics = {k: build_metric(k) for k in arg_dict['eval_metric']}
+    avg_metrics = {k: 0 for k in arg_dict['eval_metric']}
+
+
     epoch_loss = 0
     iter_num = 0
     print_freq = 100
+    metrics_freq = 100
     save_freq = 10000
 
     while iter_num < arg_dict['max_iters']:
         with tqdm(total=print_freq) as bar:
             for feature, label, _ in dataset:        
-                input, target = feature.cuda(), label.cuda()
+                input, target = feature.to(device), label.to(device)
 
                 regular_lr = cosine_lr.get_regular_lr(iter_num)
                 cosine_lr._set_lr(optimizer, regular_lr)
@@ -149,7 +171,19 @@ def train():
                 iter_num += 1
                 
                 bar.update(1)
+                wandb.log({"loss": pixel_loss})
 
+                if iter_num % metrics_freq ==0:
+                    batch_size = target.shape[0]
+                    for i in range(batch_size):
+                        target_ = target[i,].squeeze(1)
+                        prediction_ = prediction[i,].squeeze(1)
+                        for metric, metric_func in metrics.items():
+                            if not metric_func(target_.cpu(), prediction_.cpu()) == 1:
+                                avg_metrics[metric] += metric_func(target_.cpu(), prediction_.cpu())
+                    for metric, avg_metric in avg_metrics.items():
+                        # print("===> Avg. {}: {:.4f}".format(metric, avg_metric/batch_size))
+                        wandb.log({'{}'.format(metric): avg_metric/batch_size})
                 if iter_num % print_freq == 0:
                     break
 

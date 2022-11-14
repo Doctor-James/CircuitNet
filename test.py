@@ -45,6 +45,7 @@ def test():
             input, target = feature.cuda(), label.cuda()
 
             prediction = model(input)
+            print(input.size(),prediction.size())
             for metric, metric_func in metrics.items():
                 if not metric_func(target.cpu(), prediction.squeeze(1).cpu()) == 1:
                     avg_metrics[metric] += metric_func(target.cpu(), prediction.squeeze(1).cpu())

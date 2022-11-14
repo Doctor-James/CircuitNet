@@ -23,7 +23,7 @@ class Paraser(object):
         
     def get_remainder(self):
         if self.parser.parse_args().task == 'congestion_gpdl':
-            self.parser.add_argument('--dataroot', default='../training_set/congestion')
+            self.parser.add_argument('--dataroot', default='./training_set/congestion')
             self.parser.add_argument('--ann_file_train', default='./files/train.csv')
             self.parser.add_argument('--ann_file_test', default='./files/test.csv')
             self.parser.add_argument('--dataset_type', default='CongestionDataset')

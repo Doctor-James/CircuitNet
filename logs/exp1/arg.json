@@ -5,7 +5,7 @@
     "max_iters": 200000,
     "save_as_npy": false,
     "arg_file": null,
-    "dataroot": "./training_set/congestion",
+    "dataroot": "/bucket/input/BasicAlgorithm/Users/jialv.zou/CircuitNet/train_congesion/congestion/",
     "ann_file_train": "./files/train.csv",
     "ann_file_test": "./files/test.csv",
     "dataset_type": "CongestionDataset",

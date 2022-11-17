@@ -1,37 +1,82 @@
 {
     "os": "Linux-3.10.0-862.11.6.el7.x86_64-x86_64-with-glibc2.17",
     "python": "3.9.13",
-    "heartbeatAt": "2022-11-16T11:20:13.839487",
-    "startedAt": "2022-11-16T11:20:13.288085",
+    "heartbeatAt": "2022-11-16T14:22:15.451691",
+    "startedAt": "2022-11-16T14:22:15.386425",
     "docker": null,
     "cuda": null,
     "args": [
         "--task",
         "congestion_gpdl",
         "--save_path",
-        "./logs/exp1"
+        "/cluster_home/congestion_gpdl/logs/exp1/"
     ],
     "state": "running",
     "program": "/running_package/CircuitNet/train.py",
     "codePath": "train.py",
-    "host": "hobot-job-3794521-task-0",
+    "host": "hobot-job-3795716-task-0",
     "username": "jialv.zou",
     "executable": "/running_package/CircuitNet/CircuitNet/bin/python",
     "cpu_count": 16,
     "cpu_count_logical": 32,
     "cpu_freq": {
-        "current": 2299.96684375,
+        "current": 2300.1509375,
         "min": 1200.0,
         "max": 3000.0
     },
     "cpu_freq_per_core": [
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2298.925,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.694,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.822,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.694,
+            "min": 1200.0,
+            "max": 3000.0
+        },
         {
             "current": 2300.079,
             "min": 1200.0,
             "max": 3000.0
         },
         {
-            "current": 2299.951,
+            "current": 2299.182,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2300.079,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.566,
             "min": 1200.0,
             "max": 3000.0
         },
@@ -46,27 +91,7 @@
             "max": 3000.0
         },
         {
-            "current": 2301.104,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2299.438,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2299.694,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2300.335,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2299.951,
+            "current": 2300.079,
             "min": 1200.0,
             "max": 3000.0
         },
@@ -81,12 +106,7 @@
             "max": 3000.0
         },
         {
-            "current": 2299.951,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2299.822,
+            "current": 2300.335,
             "min": 1200.0,
             "max": 3000.0
         },
@@ -96,7 +116,22 @@
             "max": 3000.0
         },
         {
-            "current": 2299.822,
+            "current": 2300.079,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2300.463,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2300.207,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2301.617,
             "min": 1200.0,
             "max": 3000.0
         },
@@ -106,11 +141,6 @@
             "max": 3000.0
         },
         {
-            "current": 2300.592,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
             "current": 2299.951,
             "min": 1200.0,
             "max": 3000.0
@@ -121,27 +151,12 @@
             "max": 3000.0
         },
         {
-            "current": 2299.694,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2299.182,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
             "current": 2299.951,
             "min": 1200.0,
             "max": 3000.0
         },
         {
-            "current": 2300.079,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2300.079,
+            "current": 2303.796,
             "min": 1200.0,
             "max": 3000.0
         },
@@ -151,44 +166,29 @@
             "max": 3000.0
         },
         {
-            "current": 2299.951,
+            "current": 2299.822,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2300.976,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2300.207,
             "min": 1200.0,
             "max": 3000.0
         },
         {
             "current": 2299.951,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2300.079,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2299.951,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2299.951,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2299.951,
-            "min": 1200.0,
-            "max": 3000.0
-        },
-        {
-            "current": 2300.079,
             "min": 1200.0,
             "max": 3000.0
         }
     ],
     "disk": {
         "total": 939.9755859375,
-        "used": 386.54108810424805
+        "used": 397.1766662597656
     },
     "gpu": "GeForce GTX TITAN X",
     "gpu_count": 2,

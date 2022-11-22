@@ -1,0 +1,208 @@
+{
+    "os": "Linux-3.10.0-862.11.6.el7.x86_64-x86_64-with-glibc2.17",
+    "python": "3.9.13",
+    "heartbeatAt": "2022-11-17T07:50:13.933676",
+    "startedAt": "2022-11-17T07:50:13.858839",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--task",
+        "congestion_gpdl",
+        "--save_path",
+        "/cluster_home/congestion_gpdl/logs/exp1/"
+    ],
+    "state": "running",
+    "program": "/running_package/CircuitNet/train.py",
+    "codePath": "train.py",
+    "host": "hobot-job-3800098-task-0",
+    "username": "jialv.zou",
+    "executable": "/running_package/CircuitNet/CircuitNet/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2299.89465625,
+        "min": 1200.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.822,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.182,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.566,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.822,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.822,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.694,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2300.079,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.822,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.822,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2300.592,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.822,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2299.951,
+            "min": 1200.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "total": 939.9755859375,
+        "used": 401.6368408203125
+    },
+    "gpu": "TITAN X (Pascal)",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "TITAN X (Pascal)",
+            "memory_total": 12788498432
+        },
+        {
+            "name": "GeForce GTX TITAN X",
+            "memory_total": 12806062080
+        }
+    ],
+    "memory": {
+        "total": 156.29653549194336
+    }
+}

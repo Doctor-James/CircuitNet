@@ -1,0 +1,70 @@
+2022-11-17 19:14:23,032 INFO    StreamThr :2961 [internal.py:wandb_internal():88] W&B internal server running at pid: 2961, started at: 2022-11-17 19:14:23.029913
+2022-11-17 19:14:23,036 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: status
+2022-11-17 19:14:23,038 DEBUG   SenderThread:2961 [sender.py:send_request():317] send_request: status
+2022-11-17 19:14:23,040 INFO    WriterThread:2961 [datastore.py:open_for_write():75] open: /cluster_home/congestion_gpdl/logs/exp1/wandb/offline-run-20221117_191422-1urupr3e/run-1urupr3e.wandb
+2022-11-17 19:14:23,047 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: run_start
+2022-11-17 19:14:23,052 DEBUG   HandlerThread:2961 [system_info.py:__init__():31] System info init
+2022-11-17 19:14:23,052 DEBUG   HandlerThread:2961 [system_info.py:__init__():46] System info init done
+2022-11-17 19:14:23,053 INFO    HandlerThread:2961 [system_monitor.py:start():150] Starting system monitor
+2022-11-17 19:14:23,053 INFO    SystemMonitor:2961 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-17 19:14:23,053 INFO    HandlerThread:2961 [system_monitor.py:probe():168] Collecting system info
+2022-11-17 19:14:23,054 INFO    SystemMonitor:2961 [interfaces.py:start():168] Started cpu
+2022-11-17 19:14:23,055 INFO    SystemMonitor:2961 [interfaces.py:start():168] Started disk
+2022-11-17 19:14:23,057 INFO    SystemMonitor:2961 [interfaces.py:start():168] Started gpu
+2022-11-17 19:14:23,058 INFO    SystemMonitor:2961 [interfaces.py:start():168] Started memory
+2022-11-17 19:14:23,059 INFO    SystemMonitor:2961 [interfaces.py:start():168] Started network
+2022-11-17 19:14:23,083 DEBUG   HandlerThread:2961 [system_info.py:probe():195] Probing system
+2022-11-17 19:14:23,090 DEBUG   HandlerThread:2961 [git.py:repo():40] git repository is invalid
+2022-11-17 19:14:23,091 DEBUG   HandlerThread:2961 [system_info.py:probe():241] Probing system done
+2022-11-17 19:14:23,091 DEBUG   HandlerThread:2961 [system_monitor.py:probe():177] {'os': 'Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.9.13', 'heartbeatAt': '2022-11-17T11:14:23.083836', 'startedAt': '2022-11-17T11:14:22.541517', 'docker': None, 'cuda': None, 'args': ('--task', 'congestion_gpdl', '--save_path', '/cluster_home/congestion_gpdl/logs/exp1/'), 'state': 'running', 'program': '/running_package/CircuitNet/train.py', 'codePath': 'train.py', 'host': 'hobot-job-50417-task-0', 'username': 'jialv.zou', 'executable': '/running_package/CircuitNet/CircuitNet/bin/python', 'cpu_count': 48, 'cpu_count_logical': 96, 'cpu_freq': {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, 'cpu_freq_per_core': [{'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}], 'disk': {'total': 353.8661918640137, 'used': 204.2632942199707}, 'gpu': 'GeForce RTX 3090', 'gpu_count': 2, 'gpu_devices': [{'name': 'GeForce RTX 3090', 'memory_total': 25447170048}, {'name': 'GeForce RTX 3090', 'memory_total': 25447170048}], 'memory': {'total': 503.64831924438477}}
+2022-11-17 19:14:23,093 INFO    HandlerThread:2961 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-17 19:14:23,094 INFO    HandlerThread:2961 [system_monitor.py:probe():181] Publishing system info
+2022-11-17 19:14:23,094 DEBUG   HandlerThread:2961 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-11-17 19:14:23,097 DEBUG   HandlerThread:2961 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-17 19:14:23,097 DEBUG   HandlerThread:2961 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-11-17 19:14:23,103 ERROR   HandlerThread:2961 [system_info.py:_save_conda():85] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/running_package/CircuitNet/CircuitNet/lib/python3.9/site-packages/wandb/sdk/internal/system/system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "/running_package/CircuitNet/CircuitNet/lib/python3.9/subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/running_package/CircuitNet/CircuitNet/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/running_package/CircuitNet/CircuitNet/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2022-11-17 19:14:23,104 DEBUG   HandlerThread:2961 [system_info.py:_save_conda():86] Saving conda packages done
+2022-11-17 19:14:23,108 INFO    HandlerThread:2961 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-17 19:15:23,059 DEBUG   SystemMonitor:2961 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-17 19:16:28,612 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:28,836 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:29,044 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:29,252 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:29,460 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:29,668 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:29,877 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:30,087 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:30,297 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:30,506 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:30,715 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:30,924 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:31,133 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:31,341 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:31,551 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:16:31,761 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:14,674 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:14,886 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:20,157 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:20,370 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:20,746 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:20,957 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:21,168 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:21,378 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:21,587 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:21,796 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:22,005 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:22,216 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:22,425 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:22,634 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:22,842 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-17 19:18:23,051 DEBUG   HandlerThread:2961 [handler.py:handle_request():139] handle_request: partial_history
